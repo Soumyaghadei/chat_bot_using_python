@@ -7,8 +7,7 @@ class ChatBot:
         self.root = root
         self.root.title("ChatBot")
         self.root.geometry("730x620+0+0")
-        self.root.bind('<Return>',self.enter_func)  # Corrected geometry string
-
+        self.root.bind('<Return>',self.enter_func) 
 
 
         main_frame=Frame(self.root,bd=4,bg='powder blue',width=610)
@@ -48,7 +47,6 @@ class ChatBot:
         self.label_2.grid(row=1,column=1,padx=5,sticky=W)
 
 
-    #Start function---------------------------------------------------------
     def enter_func(self,event):
         self.send.invoke()
         self.entry.set('')
